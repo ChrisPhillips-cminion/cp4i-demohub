@@ -118,158 +118,88 @@ will configure the proxy call to invoke the endpoint.
 
 ### Configure API Key security
 
-1.  Click [[Security
-    Definitions]].
 
-2.  In the [[Security
-    Definition]] section,
-    click
-    the [[Add]] button
-    on the right. This will open a new view titled [**[API Security
-    Definition]**[.]]
+1. 	Click on the + icon besides the security schema to create a new security schema
+    ![](images/tutorial_html_99e51d8ec0929f2b5.png)
 
-3.  In the **[Name]** field,
-    type [[client-id]].
+2.	Put in the name of the schema and select apiKey as the type
+    ![](images/tutorial_html_3e41d8ec0929f2b5.png)
+3.  Put in the name of the key and select “client_id” as the key type and header as the location.  Then click
+Create
+    ![](images/tutorial_html_5b900a842ec2bfff.png)
 
-4.  Under **[Type]**, choose [[API
-    Key]].
-    This will reveal additional settings.
+4.  The newly created security schema will be shown in the left navigator.
 
-5.  For **[Located
-    In]** choose [[Header]].
-    For **[Key Type]** choose [[Client
-    ID]].
-    In [[Parameter
-    Name]] type [[X-IBM-Client-Id]].
-    Your screen should look like the image below. 
+5.  Click on the + icon besides the security
 
-    ![](images/tutorial_html_9acabae1c0f045ea.png)
+    ![](images/tutorial_html_3e4ZZ8ec0929f2b5.png)
 
-6.  Click
-    the [[Save]] button
-    to return to the **[Security
-    Definitions]** section.
+6.	Select the security schema created in the step 3, and then click create and then submit to create it.
 
-7.  Click [[Add]] again
-    to add the client secret definition.
+    ![](images/tutorial_html_5b90ZZa842ec2bfff.png)
+    ![](images/tutorial_html_5b90ZZa842Vc2bfff.png)
 
-8.  Under **[Name,]** type [[secret]].
+7.  Repeat steps 1 to 4 to create X-IBM-Client-secret as a Type Client-Secret,
 
-9.  For **[Located
-    In]** choose [[Header]].
-    For **[Key Type]** choose [[Client
-    Secret]].
-    In [[Parameter
-    Name]] type [[X-IBM-Client-Secret]].
-    Your screen should look like the image below. 
+    ![](images/step2_6.png)
 
-    ![](images/tutorial_html_c8364653a0d1e2f5.png)
+6.	Go to the Security entry created in step 5. Select the security schema created in the step 3, and then click create and then submit to create it.
 
-10. Click
-    the [[Save]] button
-    to return to the **[Security
-    Definitions]** section.
+    ![](images/tutorial_html_5b90ZZEa842ec2bfff.png)
 
-11. Click [[Security]] in
-    the left menu.
-
-12. Click [[Add. ]]This will
-    populate the **[Security
-    Definitions]** table with secret and
-    client-id. Select both as shown in the image below. Then
-    click [[Save]]. 
-
-    ![](images/tutorial_html_41e66c41b43e89ac.png)
-
-13. Add security and enable secret and client-id. Click **Save** to save
-    the changes.
-
-    ![](images/tutorial_html_5bd00a842ec2bfff.png)
 
 ### Define Target-URL for Sandbox environment
 
-1.  Click
-    on [[Properties]] in
-    the left menu.
+1.  Click on the gateway tab and then use the + icon beside property to create a new property.
+    ![](images/step3_1.png)
 
-2.  Click on the target-url property. The target-url property is
-    automatically inserted to be able to define multiple run-time
-    targets for the service.
+2.  Update the URL to  https://apic-pot-inventory-api.mybluemix.net
+    ![](images/step3_2.png)
 
-3.  In the **[Default value]** text field,
-    type [https://apic-pot-inventory-api.mybluemix.net](https://apic-pot-inventory-api.mybluemix.net/)**[.]**
-
-4.  Click **[Add.]**
-
-5.  Choose the **[Sandbox catalog]** and
-    for the URL
-    type [https://apic-pot-inventory-api.mybluemix.net](https://apic-pot-inventory-api.mybluemix.net/)
-
-![](images/tutorial_html_f977429f6db6091a.png)
-
-6.  Click **[Save]** to complete the
+3.  Click **[Save]** to complete the
     configuration.
 
 ### Configure Proxy Call in Designer
 
+1.  Click on the “policies” and then click on the “Invoke” item in the assembly panel.
+    ![](images/step4_1.png)
 
-1.  On the top Navigation,
-    click [[Assemble]].
+2.  Update the URL in the invoke configuration with  `$(target-url)$(request.path)$(request.search)`
+    ![](images/step4_2.png)
 
-2.  Click [[Invoke]] in
-    the flow
-    designer.  ![](images/tutorial_html_eda46641cdf764e6.png)
-
-3.  This will open a window from the right to configure. In the URL
-    field, type [[**\$(target-url)\$(request.path)\$(request.search)**]]. 
-
-4.  Click [[Save]].
+3.  Click [[Save]].
 
 ## Test the API
 
 In the API designer, you have the ability to test the API immediately
 after creation in the Assemble view!
 
-1.  Click
-    the **[play]** **[icon]** as
-    indicated in the image below. 
+1.  Toggle [[Offline]] to activate API. to publish the API itself to the gateway for testing
 
-    ![](images/tutorial_html_70e7e587c6be69d7.png)
+    ![](images/step5_1.png)
 
-2.  Toggle
-    [[Offline]]
-    to activate API. to publish the API itself to the gateway for
-    testing.  
+2.  Click on the Test tab and select
 
-    ![](images/tutorial_html_227e8350d01d16f9.png)
+`GET https://gw.techiotraining-420eb34f056ae68f3969289d61f61851-0000.us-east.containers.appdomain.cloud/labtest/sandbox/api/Items`
 
-3.  After the API is published, additional tabs appear your screen
-    should look like the image below.
-    ![](images/tutorial_html_a35d4b82b4aa8b10.png)
+From the drop down. *Your URL will be different from that in the example.*
+ 
 
-4.  Choose **[Test]** tab and append **[/Items]** to the URL as shown below.
+    ![](images/step5_2.png)
 
-    ![](images/tutorial_html_5e2c8cff09f77c58.png)
 
-5.  Your client Id  and client secret for the sandbox-test-app is
-    prefilled.
+3.  Click [[Send]].
 
-6.  Scroll all the way to the bottom of the test view.
+4.  In the first time of running the API after publishing the API, the security warning dialog box may show.  Please click on the `here` link and accept the certificate to see the 401 message.
+    ![](images/step5_4.png)
 
-    ![](images/tutorial_html_6400dc1e94d34fd8.png)
-
-7.  Click [[Send]].
-
-8.  If this is the first test of the API, you will see a certificate
-    exception. Simply click on the URL and choose the option to proceed.
-
-9.  Go back to the test view and
+5.  Go back to the test view and
     click [[Send]] again.
 
-10. Now you will see a Response section with Status code 200 OK and the
+6. Now you will see a Response section with Status code 200 OK and the
     Body displaying all the inventory items.
 
-    ![](images/tutorial_html_d063fb9dba035b70.png)
+    ![](images/step5_6.png)
 
 ## Publish API
 
@@ -285,7 +215,7 @@ lab is written to the gateway. 
     click **[Develop]** to return to the
     Develop home screen.
 
-    ![](images/tutorial_html_fa935b3ea4222145.png)
+    ![](images/step6_1.png)
 
 2.  Click **[Add]** and
     select [Product]**.**
@@ -306,20 +236,18 @@ lab is written to the gateway. 
 6.  Keep the **[Default Plan]** as is.
     Click **[Next]**.  
 
-    ![](images/tutorial_html_333097bd27fa8fa7.png)
 
 7.  Under **[Publish]**, enable **[Publish
     Product]** as shown in the image below.
     Then
     click [**[Next]**[.  ]]
 
-    ![](images/tutorial_html_850499fce1003aa7.png)
-
 8.  The Product is now published successfully with the API base URL
-    listed and available for developers from the developer portal. Go
-    to [APIC (v10) Dev Jam - Lab 2 - The Developer Portal
+    listed and available for developers from the developer portal.
+
+    Go to [APIC (v10) Dev Jam - Lab 2 - The Developer Portal
     Experience](https://integrationsuperhero.github.io/techcon2020/APICDevJam/Lab2) to
-    see how to access this API as a developer.
+    see how to access this API as a consuming developer.
 
 ## Summary
 
