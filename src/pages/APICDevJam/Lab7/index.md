@@ -34,7 +34,7 @@ registry.]**
 
 Prerequisites: Labs 1-6
 
-## Subscribe o the Accessories Product
+## Subscribe to the Accessories Product
 
 In this section, you will subscribe to a plan for the
 Accessories Product using the IBM Consumer application.
@@ -44,7 +44,7 @@ Accessories Product using the IBM Consumer application.
 2.  If you are logged in to the portal, log out to clear your session.
 
 3.  Click the [[API
-    Products]] link.  ![](images/tutorial_html_444fff2d8e0d46b7.png)
+    Products]] link.  ![](images/Step1_1.png)
 
 4.  Notice that only the Inventory product is listed, even though you
     just published the Accessories product. Recall that you assigned the
@@ -54,12 +54,12 @@ Accessories Product using the IBM Consumer application.
 5.  Enter Login page using Sign in option at the top right corner of the
     page.
 
-    ![](images/tutorial_html_db604e248301f829.png)
+    Products]] link.  ![](images/Step1_2.png)
 
 6.  Login using the username \<portaluser\> and password
     \<portaluser-password\>
 
-    ![](images/tutorial_html_492593c5f2350159.png)
+    Products]] link.  ![](images/Step1_3.png)
 
 7.  Click the [[API
     Products]] link
@@ -68,14 +68,15 @@ Accessories Product using the IBM Consumer application.
 8.  Select the [[ Accessories
     1.0.0]] product. 
 
-    ![](images/tutorial_html_6efccbf2582a30c0.png)  
+    ![](images/Step1_8.png)
 
 9.  You will be directed to the Product page which lists the available
     plans for subscription.
     Click [[Subscribe]] under
-    the [[Silver]] plan.  ![](images/tutorial_html_fd5ece1fe8b66fa5.png)
+    the [[Silver]] plan.  
+    ![](images/Step1_9.png)
 
-10. **Note:** The Gold plan requires approval by the API provider for
+**Note:** The Gold plan requires approval by the API provider for
     any subscription requests and allows unlimited requests for a given
     time period. The Silver plan is limited to 100 requests per hour and
     does not require approval by the API provider for subscription
@@ -87,20 +88,20 @@ Accessories Product using the IBM Consumer application.
     App]] which
     is located below the application
     tile.  
-    ![](images/tutorial_html_fe0fc338b5ae9fd3.png)
+    ![](images/Step1_11.png)
 
 12. A window with the subscription details is displayed to confirm the
     information provided.
     Click [[Next]] once
     you have reviewed the
     information.  
-    ![](images/tutorial_html_ea31c68f8a08a741.png)
+    ![](images/Step1_12.png)
 
 13. The last step is displayed with the summary of the subscription.
     Click [[Done]] to
     finalize the
     wizard.  
-    ![](images/tutorial_html_359b7068e5f3a808.png)
+    ![](images/Step1_13.png)
 
 ## Test APIs from the Developer Portal
 
@@ -113,7 +114,7 @@ expected response based on inputs they provide the API.
     2.0.0]] API
     link on the Accessories product
     page.  
-    ![](images/tutorial_html_8ec6b1024d5a2f9a.png)
+    ![](images/Step2_1.png)
 
 2.  Click the [[GET
     /shipping]] path
@@ -121,19 +122,19 @@ expected response based on inputs they provide the API.
 
 3.  Click the \`Try it\` link to access the test
     area.  
-    ![](images/tutorial_html_6326764a039cba2b.png)
+    ![](images/Step2_3.png)
 
 4.  Scroll down to the Parameters section, enter any **United State Zip
     Code** (e.g., \`90210\`) and
     click [[Send]] to
     invoke the API.  
-    ![](images/tutorial_html_74d26a44eab03d67.png)
+    ![](images/Step2_4.png)
 
 5.  You should see a [[200
     OK ]]and
     a response body as shown
     below.  
-    ![](images/tutorial_html_f9b90c1492df91e8.png)
+    ![](images/Step2_5.png)
 
 6.  Go ahead and try out the [[Logistics GET
     /stores]] and

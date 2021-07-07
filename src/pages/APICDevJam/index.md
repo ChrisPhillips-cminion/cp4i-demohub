@@ -3,8 +3,12 @@ title: APIC DevJam
 ---
 import ArticleDetails from '../../gatsby-theme-carbon/components/ArticleDetails'
 
-<ArticleDetails name="Ravi Katikala" lastUpdated="October 2020" readTimeMinutes="120" />
 
+Originally By
+<ArticleDetails name="Ravi Katikala" lastUpdated="October 2020" readTimeMinutes="240" />
+
+Updated By
+<ArticleDetails name="Chris Phillips, Arthur Lin, Maruthi KOILOTH, Luis Jimenez Matilla, Marica Alesina and Vivin Abraham" lastUpdated="July 2021"  />
 
 **APIC Dev Jam Lab Instructions**
 
@@ -22,7 +26,7 @@ import ArticleDetails from '../../gatsby-theme-carbon/components/ArticleDetails'
 
 [Lab 7: The Consumer Experience](/APICDevJam/Lab7)
 
-[Lab 8: Create and test GraphQL Proxy API](/APICDevJam/Lab8)
+<!--[Lab 8: Create and test GraphQL Proxy API](/APICDevJam/Lab8) -->
 
 **APIC Dev Jam Lab Resources**
 

@@ -52,7 +52,7 @@ using the credentials provided in email.
     and feel to their organizational specifications. The default
     Developer Portal looks like below:
 
-    ![](images/tutorial_html_df45d2edf6f25ba8.png)
+    ![](images/Step1_1.png)
 
 2.  Some products are visible to all users without an account depending
     on the Product visibility setting. Additional options are available
@@ -60,12 +60,10 @@ using the credentials provided in email.
 
     Click **Sign in** to login to the portal
 
-    ![](images/tutorial_html_279e27e5ac9b71cb.png)
-
 3.  Login to portal user using the username and password supplied in the
     email.
 
-    ![](images/tutorial_html_d0807a5f400162a.png)
+    ![](images/Step1_3.png)
 
 4.  After successful login, you will see a Get Started page. Proceed to
     create a new Test application.
@@ -82,37 +80,27 @@ subscribing it to an API Product.
 ### [Create A New Consumer Application]
 
 
-1.  Click [[Create an
-    App]] in
-    the *Create a new App* tile.
+1.  Click on Apps
+    ![](images/Step2_1.png)
 
-    ![](images/tutorial_html_114ebdd6ef4988c.png)
+2.  Click  *Create a new App*.
 
-2.  Give your application the title **[IBM
-    Consumer ]** and then
-    click [[Submit]].
+    ![](images/Step2_2.png)
 
-    ![](images/tutorial_html_c4d9babec32568f9.png)
+3.  Give your application the title **[IBM Consumer Application]** and then
+    click [[save]].
 
-### Save the Consumer Application Credentials
+    ![](images/Step2_3.png)
 
 
-When your consumer application is registered in the IBM API Connect
+4. When your consumer application is registered in the IBM API Connect
 system, it is assigned a unique set of client credentials. These
 credentials must be provided on each API request in order for the system
-to validate your subscription entitlements.
+to validate your subscription entitlements. The Client ID can be retireved anytime but the Client Secret can only be retrieved at this time.
 
-1.  Click the [[Show]] box
-    in both Key and Secret to reveal it. Copy the Key and Secret. Save
-    it to a text editor. Then
-    click [[Continue. ]]You
-    can always come back to view the Key. However, if you lose the
-    Secret, you will need to generate a new one in the app settings.
+![](images/Step2_4.png)
 
-    ![](images/tutorial_html_aba0b5683b88b7d6.png)
-
-2.  Now you\'ve entered the App Dashboard. Here you\'re able to see the
-    analytics of your APIs.
+5.  Click the OK
 
 ### Subscribe to the API Product
 
@@ -126,17 +114,17 @@ Product and Plan.
 2.  Click the [[inventory auto product
     1.0.0]] product.
 
-    ![](images/tutorial_html_38168de09ddc40f.png)
+    ![](images/Step3_1.png)
 
-3.  Click the [[Subscribe]] button
-    for the default plan that is listed.
+3.  Scroll down to the Plan and select it.
 
-4.  Follow the steps to **Select your application**, **Confirm
-    Subscription**, and **View Summary**. Then click **Done**.
+![](images/Step3_2.png)
 
-    ![](images/tutorial_html_cfeb4fb8846dee41.png)
+4.  **Select your application**, 
+      ![](images/Step3_4.png)
 
-    ![](images/tutorial_html_95cbfb50e3695ef5.png)
+5. Click **Done**.
+      ![](images/Step3_6.png)
 
  ## Test the API
 
@@ -144,32 +132,40 @@ The API Connect Developer Portal allows consumers to test the APIs
 directly from the website. This feature may be enabled or disabled
 per-API.
 
-1.  Open the **inventory 1.0.0** API to browse the API definition.
 
-    ![](images/tutorial_html_9830850c1b13f9c1.png)
+1.  Click [[API Products]] at
+    the top of the screen.
 
-2.  Click the [[GET
-    /Items]] operation
+
+2.  Click the [[inventory auto product 1.0.0]] product.
+
+        ![](images/Step3_1.png)
+
+3.  Open the **inventory 1.0.0** API to browse the API definition.
+
+    ![](images/Step4_3.png)
+
+4.  Click the [[GET /Items]] operation
     on the left palette.
 
-3.  In the right column, you will find information about the request
+    In the right column, you will find information about the request
     parameters and links to the response schemas.
 
-4.  Click the [[Try
-    it]] tab.
+5.  Click the [[Try it]] tab.
 
-    ![](images/tutorial_html_a16511906f41b73.png)
+    ![](images/Step4_5.png)
 
-5.  If you only have one application registered, it will be
+6.  If you only have one application registered, it will be
     automatically selected in the **[Client
     ID]** drop-down menu. If you have more
     than one, select the application which is subscribed to this API
     Product.
+    ![](images/Step4_7.png)
 
-6.  Paste your **[Client Secret]** into the
+7.  Paste your **[Client Secret]** into the
     provided field.
 
-7.  Click the [[**Send**]] button
+8.  Click the [[**Send**]] button
     to invoke the API.
 
 8.  Scroll down to see the call results.
@@ -180,8 +176,6 @@ the server being unavailable, or an untrusted certificate being
 encountered. Clicking the link below will open the server in a new tab.
 If the browser displays a certificate issue, you may choose to accept it
 and return here to test again.]**
-
-![](images/tutorial_html_1b2581520ef305f.png)
 
 ## Summary
 

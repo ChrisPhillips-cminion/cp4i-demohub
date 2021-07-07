@@ -55,7 +55,7 @@ Prerequisites: Labs 1-3
 In IBM API Connect, Plans and APIs are grouped together in Products,
 with which you can manage the availability and visibility of APIs and
 Plans. Products allow related APIs to be bundled together for
-subscribers. In Lab 1, when the inventory microservice application was
+subscribers. In Lab 1, when the inventory api application was
 generated, it also created a default product. In this section, you will
 create a new product from scratch and stage it to your API Manager
 environment.
@@ -157,8 +157,6 @@ running version of an API Product with a new one.
 1. Switch to the **[Manage]** tab of the interface and click on
   your **[Sandbox]** catalog tile.
 
-  ![](images/tutorial_html_dd28754d9b40b41b.gif)
-
 2. The **[Products tab]** will list all of
   the API Products that this Catalog is currently managing.
 
@@ -167,18 +165,18 @@ running version of an API Product with a new one.
   old **[Inventory APIs]** product
   is **[Published]** in the Catalog.
 
-  ![](images/tutorial_html_b69739b268fcf1bf.png)
+  ![](images/supers_1.png)
 
 4. Click on the menu options for the **[Inventory
   APIs]** product and select
   the **[Supersede]** option.
 
-  ![](images/tutorial_html_779570cda3681c33.png)
+  ![](images/supers_2.png)
 
 5. Select the **[Inventory Products]** product, as this is the one
   which will supersede Inventory APIs .
 
-  ![](images/tutorial_html_4be14720ca4455b0.png)
+    ![](images/supers_3.png)
 
 6. Click **[Next]** in the bottom.
 
@@ -193,15 +191,15 @@ running version of an API Product with a new one.
   In the drop-down menu, select Default Plan and then
   click [[Supersede]].
 
-   ![](images/tutorial_html_6303625db3f1ae01.png)
+  ![](images/supers_4.png)
 
 8. API Connect will take care of deprecating the old product and
   publishing the new one. As a result, the new **Inventory Products** product
   will be published, while the old one will be automatically deprecated.
 
-   ![](images/tutorial_html_d7847d64c8d3c2d5.png)
+  ![](images/supers_5.png)
 
-## Test the OAuth Configuration
+<!-- ## Test the OAuth Configuration
 
 In this section, you will test the new version of the API to ensure that
 OAuth is working properly.
@@ -287,7 +285,7 @@ your API. Throughout the tutorial, you explored the key takeaways:   
 
 -   Supercede the Old Product.
 
--   Test Your OAuth API in the Developer Portal.
+<!-- -   Test Your OAuth API in the Developer Portal.-->
 
 Continue the APIC Dev Jam! Go to[ APIC Dev Jam - Lab 5 - Advanced API
 Assembly](../Lab5) to
